@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: crimson;
+}
+
+
+.grid-container{
+  display:grid;
+  height:600px;
+  w300
+  
+}
