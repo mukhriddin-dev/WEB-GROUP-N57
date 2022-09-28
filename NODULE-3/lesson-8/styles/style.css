@@ -1,0 +1,15 @@
+.box{
+   width: 300px;
+   height: 300px;
+   background-color: crimson;
+}
+.circle{
+border-radius: 50%;
+}
+
+.btn-infoo{
+   position: absolute;
+   right: 8px;
+   top:12px;
+   font-size: 24px;
+}

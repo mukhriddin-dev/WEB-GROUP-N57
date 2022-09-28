@@ -1,6 +1,6 @@
 2022.09.23 #month3 #lesson7
 
-1.addEvenetListener , attributes 
+1.  addEvenetListener , attributes 
 
 2. Evenet Object
 
@@ -34,9 +34,9 @@ Keyboard events:
  - submit
 
    Scroll & window Event
-   
-   - DOMContentLoaded
+
    - scroll
+   - DOMContentLoaded
    - load
 
     

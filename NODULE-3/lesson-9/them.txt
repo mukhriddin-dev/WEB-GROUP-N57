@@ -1,0 +1,20 @@
+#lesson9 2022.09.28 
+
+setInterval() / clearInterval( )
+
+setTimeOut() / clearTimeout( )
+
+JavaScript Date Objects [new Date()]
+
+LIVE 🕙 🔥🔥
+
+classList
+
+add() qo'shadi
+remove() olib btashlaydi
+toggle()  bor bo'lsa o'chiradi , yo'q bo'lsa qo'shadi
+contains() classlistda bor bo'lsa true / false
+
+PRACTICE SLIDER 🔥🔥
+
+Create Dynamic Element In Javascrip

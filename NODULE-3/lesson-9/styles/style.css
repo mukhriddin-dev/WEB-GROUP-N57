@@ -1,0 +1,141 @@
+/* .box{
+   width: 300px;
+   height: 300px;
+   background-color: crimson;
+}
+.circle{
+border-radius: 50%;
+}
+
+.btn-infoo{
+   position: absolute;
+   right: 8px;
+   top:12px;
+   font-size: 24px;
+}
+
+.card{
+transition: all 0.2s ease;
+   height: 500px;
+}
+
+.swiper{
+   transform: translateY(-200%);
+}
+.wrapper{
+   position: relative;
+}
+
+#hour{
+   font-size: 320px;
+}
+
+#minute{
+   font-size: 110px;
+   position: relative;
+   top:90px
+}
+
+#second{
+   position: relative;
+   top:210px;
+   font-size: 130px;
+   left: -30px;
+   color: rgb(62, 59, 52);
+} */
+
+.wrapper{
+   position: relative;
+  
+}
+
+.slide-content{
+   width: 1000px;
+   height: 620px;
+   border:1px solid #000;
+   margin: 50px auto;
+   position: relative;
+   overflow-x: hidden;
+   
+}
+
+.feed{
+   display: flex;
+   transition: transform 0.4s ease;
+}
+
+.next{
+   position:absolute;
+   font-size: 36px;
+   right: 5px;
+   top:45%;
+   cursor: pointer;
+   z-index: 3333;
+   color:blueviolet;
+}
+
+.next:active{
+   color:blue;
+}
+
+.prev{
+   position:absolute;
+   font-size: 36px;
+   left: 5px;
+   top:45%;
+   cursor: pointer;
+   z-index: 3333;
+   color:blueviolet;
+}
+
+.prev:active{
+   color:blue;
+}
+
+.slide-item{
+   min-width: 1000px;
+   height: 618px;
+   background-color: aqua;
+   border:1px solid #000;
+}
+
+.slide-item:nth-child(1){
+   background-image: url("https://picsum.photos/id/43/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(2){
+   background-image: url("https://picsum.photos/id/53/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(3){
+   background-image: url("https://picsum.photos/id/63/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(4){
+   background-image: url("https://picsum.photos/id/73/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(5){
+   background-image: url("https://picsum.photos/id/283/800/620");
+   background-size:cover;
+}
+
+
+.slide-item:nth-child(6){
+   background-image: url("https://picsum.photos/id/163/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(7){
+   background-image: url("https://picsum.photos/id/173/800/620");
+   background-size:cover;
+}
+
+.slide-item:nth-child(8){
+   background-image: url("https://picsum.photos/id/183/800/620");
+   background-size:cover;
+}
