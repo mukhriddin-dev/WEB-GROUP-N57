@@ -1,0 +1,12 @@
+
+
+.box{
+   width: 400px;
+   min-height: 420px;
+   background-color: rgb(239, 239, 239);
+   margin: 8px;
+}
+
+.card{
+   width: 250px;
+}

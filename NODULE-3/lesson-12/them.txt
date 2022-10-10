@@ -1,0 +1,15 @@
+#lesson12 2022.10.05
+
+Custom selector function (Plugin)
+
+template tag
+
+Movies app (practice)
+
+Find duplicates in an array using javaScript
+
+
+
+
+
+
