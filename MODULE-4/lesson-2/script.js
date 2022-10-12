@@ -1,4 +1,4 @@
-const data = movies.splice(0, 1000);
+const data = movies.splice(0, 100);
 
 const newData = data.map((item, index, array) => {
    return {
@@ -21,8 +21,6 @@ const newData = data.map((item, index, array) => {
 function getRenderData() {
    newData.forEach((movie) => {
 
-
-
       const movieCard = createElement(
          "div",
          "card shadow",
@@ -40,6 +38,10 @@ function getRenderData() {
      <a href=${movie.yotube} class="btn btn-danger" target="_blank">Youtube watch ... </a>
    </div>
    `);
+
+      movieCard.dataset.imDb = movie.movieId
+
+      ;
 
 
 
@@ -80,17 +82,14 @@ dynamicCategory()
 
 
 //=========== FIND MOVIE START ===========
-let findMovie = function (search, rating , selected) {
+let findMovie = function (search, rating, selected) {
    console.log(selected);
    return newData.filter((item) => {
-  
-  let ct=item.category.filter(item=>{
-     return item.toLowerCase()===selected;
-  })
 
-
-
-      return item.title.match(search) && item.rating >= rating && ct.join('').toLowerCase()===selected;  
+      let ct = item.category.filter(item => {
+         return item.toLowerCase() === selected;
+      })
+      return item.title.match(search) && item.rating >= rating && ct.join('').toLowerCase() === selected;
    })
 
 
@@ -102,14 +101,14 @@ console.log(findMovie());
 //=========== FIND MOVIE END ===========//
 
 $('.btn-primary').addEventListener('click', () => {
-   $('.wrapper').innerHTML=`<div class="text-center">
+   $('.wrapper').innerHTML = `<div class="text-center">
    <div class="spinner-border" role="status">
      <span class="visually-hidden">Loading...</span>
    </div>
  </div>`;
    let texts = $('#search').value.trim();
    let rating = $('#rating').value;
-   let category=$('#select').value.toLowerCase();
+   let category = $('#select').value.toLowerCase();
    console.log(category);
    const regexp = new RegExp(texts, "gi");
    let result = findMovie(regexp, rating, category);
@@ -118,14 +117,39 @@ $('.btn-primary').addEventListener('click', () => {
       $('#res').innerHTML = "Natija 0 ta"
    } else {
       $('#res').innerHTML = `${result.length}`
-   }  
+   }
 
    console.log(result);
-   setTimeout(()=>{
+   setTimeout(() => {
       searchRender(result)
-   },100)
+   }, 100)
 })
 
+
+$('#search').addEventListener('keyup', () => {
+   $('.wrapper').innerHTML = `<div class="text-center">
+   <div class="spinner-border" role="status">
+     <span class="visually-hidden">Loading...</span>
+   </div>
+ </div>`;
+   let texts = $('#search').value.trim();
+   let rating = $('#rating').value;
+   let category = $('#select').value.toLowerCase();
+   console.log(category);
+   const regexp = new RegExp(texts, "gi");
+   let result = findMovie(regexp, rating, category);
+
+   if (result.length === 0) {
+      $('#res').innerHTML = "Natija 0 ta"
+   } else {
+      $('#res').innerHTML = `${result.length}`
+   }
+
+   console.log(result);
+   setTimeout(() => {
+      searchRender(result)
+   }, 100)
+})
 //=========== RENDER SEARCH RESULT ===========//
 
 function searchRender(data) {
