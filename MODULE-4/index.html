@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- icons -->
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- main css -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>lesson-10</title>
+</head>
+
+<body>
+  <header class="bg-success">
+    <div class="container">
+      <nav class="nav bg-success p-3">
+        <h2 class="nav-logo text-white">CRUD APP</h2>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="modal-window d-none">
+    <div class="modal-body">
+      <div class="card bg-transparent p-2 shadow">
+        <h4 class="text-success mb-4">MA'LUMOT KIRITISH</h4>
+        <span class="close position-absolute">
+          <i class="bi bi-x-lg fs-3 text-danger"></i>
+        </span>
+        <label for="isname">
+          Smartfon nomi
+          <input type="text" class="form-control p-3 mb-3" placeholder="enter smartphone name" id="setname" />
+        </label>
+
+        <label for="isname">
+          Smartfon narxi
+          <input type="number" min="100" max="120000" class="form-control p-3 mb-3" placeholder="enter smartphone name"
+            id="setprice" />
+        </label>
+
+        <label for="isname">
+          Qachon ishlab chiqarilgan
+          <input type="date" class="form-control p-3 mb-3" placeholder="enter smartphone name" id="setdate" />
+        </label>
+
+        <button class="btn btn-warning set-btn">Saqlash</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <main>
+    <div class="toast-s show-toast alert alert-danger">
+      <small>ERRORR</small>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 p-3">
+            <div class="card p-2 shadow">
+              <h4 class="text-success mb-4">MA'LUMOT KIRITISH</h4>
+              <label for="isname">
+                Smartfon nomi
+                <input type="text" class="form-control p-3 mb-3" placeholder="enter smartphone name" id="name" />
+              </label>
+
+              <label for="isname">
+                Smartfon narxi
+                <input type="number" min="100" max="120000" class="form-control p-3 mb-3"
+                  placeholder="enter smartphone name" id="price" />
+              </label>
+
+              <label for="isname">
+                Qachon ishlab chiqarilgan
+                <input type="date" class="form-control p-3 mb-3" placeholder="enter smartphone name" id="date" />
+              </label>
+
+              <button class="btn btn-success">QO'SHISH</button>
+            </div>
+          </div>
+
+          <div class="col-lg-7 p-3">
+            <table class="table table-striped table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Narxi</th>
+                  <th>Sanasi</th>
+                  <th>O'zgartrirish</th>
+                  <th>O'chirish</th>
+                </tr>
+              </thead>
+              <tbody class="wrapper">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./utils.js"></script>
+<script src="./script.js"></script>
+
+</html>
