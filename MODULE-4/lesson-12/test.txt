@@ -1,0 +1,72 @@
+🔴🟢
+1. javaScript data types  🔴
+2. javaScript variables -
+3. Object methods - 🔴
+6. Event Object   <= Murodov Akbarjon
+
+4. loops 🔴
+9.  String methods - 🔴
+17. logical operators   && , || is not , ! , 🔴 <= Abdusamiyev Shohsuvor
+
+
+
+7. DOM selectors 🔴
+8. HTMLCollection, cssStyleDeclaration , NodeList
+11. localStorage 🔴
+12. DOM attributes monupulation  <=Yusupov Firda
+
+13. JSON 
+15. fetch request methods  🔴
+16. Asynchronous and Syncrhonous differences 🔴
+18. function and function types🔴 <= Yo'ldoshev Murodjon
+
+
+19. DOM events 🔴
+20. setInterval, setTimeOut , . . .🔴 
+21. classList and methods 🔴
+22. eventDelegation and template tag  <= Kamolxo'jayev Shaxzod
+
+23. clone and clone types - - 
+24. rest and spread . differences
+25. destructuring (array , objects); -
+26. conditionals operators 🔴 <= Nig'matuv MuhammadAli
+
+
+14. Promise - 
+5. optional chainings 🔴
+10. How to remove Array duplicate elements 🔴
+   <= Oboqulov Hojiakbar
+
+   
+
+1. Murodov Akbarjon => 🔴 🟢 🟢 
+2. Sarmonov Umidjon => 🟢 🟢 🟢
+3. Ibrohimov Abdullajon => 🟢 🟢 🔴
+4. Tursunboyev Jahongir => 🟢 🔴 🟢
+5. Yusupov Firdavs => 🟢 🔴 🔴
+6. Yo'ldoshev Murodjon => 🟢 🔴 🔴
+7. Ravshnabekov Farruxbek => 🟢 🟢 🔴
+8. Abdusamiyev Shohsuvor => 🟢🔴🔴
+9. Nig'matuv MuhammadAli => 🔴🔴🔴
+10. Kamolxo'jayev Shaxzod => 🔴🔴🔴
+11. Oboqulov Hojiakbar => 🔴🔴🔴
+
+
+let array = [1, 2, 3, 4, 5, 5, 2, 4];
+    array=[11]
+
+let obj={age:24}
+
+
+
+let obj2={..obj}
+
+
+
+
+asyc function ok(){
+   let resp=await fetch('URL')
+}
+
+
+   
